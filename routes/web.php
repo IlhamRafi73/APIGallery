@@ -35,7 +35,6 @@ Route::controller(LoginRegisterAuthController::class)->group(function() {
    });
 
 Route::resource('gallery', GalleryController::class);
-Route::get('/gallery/create', [GalleryController::class, 'create'])->name('gallery.create');
 
 Route::get('/send-mail', [SendEmailController::class, 'index'])->name('kirim-email');
 Route::post('/post-email', [SendEmailController::class, 'store'])->name('post-email');
